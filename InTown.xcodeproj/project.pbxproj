@@ -15,6 +15,13 @@
 		F29D4AA31B96A75800B17BEA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F29D4AA11B96A75800B17BEA /* LaunchScreen.xib */; };
 		F29D4AAF1B96A75900B17BEA /* InTownTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F29D4AAE1B96A75900B17BEA /* InTownTests.m */; };
 		F29D4ABB1B96B14500B17BEA /* FeedTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F29D4ABA1B96B14500B17BEA /* FeedTVC.m */; };
+		F29D4AC11B96B46500B17BEA /* Welcome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F29D4AC01B96B46500B17BEA /* Welcome.storyboard */; };
+		F29D4AC31B96B52200B17BEA /* SignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F29D4AC21B96B52200B17BEA /* SignUp.storyboard */; };
+		F29D4AC51B96B53E00B17BEA /* SignIn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F29D4AC41B96B53E00B17BEA /* SignIn.storyboard */; };
+		F29D4AC81B96B59D00B17BEA /* SignInVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F29D4AC71B96B59D00B17BEA /* SignInVC.m */; };
+		F29D4ACB1B96B5BD00B17BEA /* SignUpVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F29D4ACA1B96B5BD00B17BEA /* SignUpVC.m */; };
+		F29D4ACE1B96B5DF00B17BEA /* WelcomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F29D4ACD1B96B5DF00B17BEA /* WelcomeVC.m */; };
+		F29D4AD01B96B69E00B17BEA /* IntownLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = F29D4ACF1B96B69E00B17BEA /* IntownLogo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +49,16 @@
 		F29D4AAE1B96A75900B17BEA /* InTownTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InTownTests.m; sourceTree = "<group>"; };
 		F29D4AB91B96B14500B17BEA /* FeedTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedTVC.h; sourceTree = "<group>"; };
 		F29D4ABA1B96B14500B17BEA /* FeedTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedTVC.m; sourceTree = "<group>"; };
+		F29D4AC01B96B46500B17BEA /* Welcome.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Welcome.storyboard; sourceTree = "<group>"; };
+		F29D4AC21B96B52200B17BEA /* SignUp.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SignUp.storyboard; sourceTree = "<group>"; };
+		F29D4AC41B96B53E00B17BEA /* SignIn.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SignIn.storyboard; sourceTree = "<group>"; };
+		F29D4AC61B96B59D00B17BEA /* SignInVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignInVC.h; sourceTree = "<group>"; };
+		F29D4AC71B96B59D00B17BEA /* SignInVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignInVC.m; sourceTree = "<group>"; };
+		F29D4AC91B96B5BD00B17BEA /* SignUpVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpVC.h; sourceTree = "<group>"; };
+		F29D4ACA1B96B5BD00B17BEA /* SignUpVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpVC.m; sourceTree = "<group>"; };
+		F29D4ACC1B96B5DF00B17BEA /* WelcomeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WelcomeVC.h; sourceTree = "<group>"; };
+		F29D4ACD1B96B5DF00B17BEA /* WelcomeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WelcomeVC.m; sourceTree = "<group>"; };
+		F29D4ACF1B96B69E00B17BEA /* IntownLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = IntownLogo.png; path = InTown/IntownLogo.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +106,7 @@
 				F29D4ABE1B96B1D700B17BEA /* Sign Up */,
 				F29D4ABD1B96B1C100B17BEA /* Welcome */,
 				F29D4AB81B96B13800B17BEA /* Notice */,
+				F29D4AD11B96B6A500B17BEA /* Images */,
 				F29D4A9F1B96A75800B17BEA /* Images.xcassets */,
 				F29D4AA11B96A75800B17BEA /* LaunchScreen.xib */,
 				F29D4A961B96A75800B17BEA /* InTown.xcdatamodeld */,
@@ -136,6 +154,9 @@
 		F29D4ABD1B96B1C100B17BEA /* Welcome */ = {
 			isa = PBXGroup;
 			children = (
+				F29D4AC01B96B46500B17BEA /* Welcome.storyboard */,
+				F29D4ACC1B96B5DF00B17BEA /* WelcomeVC.h */,
+				F29D4ACD1B96B5DF00B17BEA /* WelcomeVC.m */,
 			);
 			name = Welcome;
 			sourceTree = "<group>";
@@ -143,6 +164,9 @@
 		F29D4ABE1B96B1D700B17BEA /* Sign Up */ = {
 			isa = PBXGroup;
 			children = (
+				F29D4AC21B96B52200B17BEA /* SignUp.storyboard */,
+				F29D4AC91B96B5BD00B17BEA /* SignUpVC.h */,
+				F29D4ACA1B96B5BD00B17BEA /* SignUpVC.m */,
 			);
 			name = "Sign Up";
 			sourceTree = "<group>";
@@ -150,8 +174,20 @@
 		F29D4ABF1B96B1EC00B17BEA /* Sign In */ = {
 			isa = PBXGroup;
 			children = (
+				F29D4AC41B96B53E00B17BEA /* SignIn.storyboard */,
+				F29D4AC61B96B59D00B17BEA /* SignInVC.h */,
+				F29D4AC71B96B59D00B17BEA /* SignInVC.m */,
 			);
 			name = "Sign In";
+			sourceTree = "<group>";
+		};
+		F29D4AD11B96B6A500B17BEA /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				F29D4ACF1B96B69E00B17BEA /* IntownLogo.png */,
+			);
+			name = Images;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,8 +271,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				F29D4A9E1B96A75800B17BEA /* NoticeFeed.storyboard in Resources */,
+				F29D4AC11B96B46500B17BEA /* Welcome.storyboard in Resources */,
 				F29D4AA31B96A75800B17BEA /* LaunchScreen.xib in Resources */,
+				F29D4AD01B96B69E00B17BEA /* IntownLogo.png in Resources */,
 				F29D4AA01B96A75800B17BEA /* Images.xcassets in Resources */,
+				F29D4AC51B96B53E00B17BEA /* SignIn.storyboard in Resources */,
+				F29D4AC31B96B52200B17BEA /* SignUp.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,8 +294,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F29D4ACB1B96B5BD00B17BEA /* SignUpVC.m in Sources */,
 				F29D4A981B96A75800B17BEA /* InTown.xcdatamodeld in Sources */,
+				F29D4ACE1B96B5DF00B17BEA /* WelcomeVC.m in Sources */,
 				F29D4ABB1B96B14500B17BEA /* FeedTVC.m in Sources */,
+				F29D4AC81B96B59D00B17BEA /* SignInVC.m in Sources */,
 				F29D4A951B96A75800B17BEA /* AppDelegate.m in Sources */,
 				F29D4A921B96A75800B17BEA /* main.m in Sources */,
 			);
