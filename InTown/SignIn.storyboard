@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LPe-AG-uGO">
-                                <rect key="frame" x="16" y="393" width="288" height="45"/>
+                                <rect key="frame" x="16" y="387" width="288" height="45"/>
                                 <color key="backgroundColor" name="alternateSelectedControlColor" catalog="System" colorSpace="catalog"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="hL4-Hg-SJJ"/>
@@ -39,9 +39,12 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="Q5S-6Q-lpf" id="9py-B0-rhc"/>
+                                </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WjX-k1-Bbs">
-                                <rect key="frame" x="16" y="371" width="288" height="19"/>
+                                <rect key="frame" x="16" y="363" width="288" height="19"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="19" id="XDV-gz-3u9"/>
                                 </constraints>
@@ -64,8 +67,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="onSignInButtonTapped:" destination="Q5S-6Q-lpf" eventType="touchUpInside" id="mEH-Kj-4ZT"/>
-                                    <action selector="onSingInButtonTapped:" destination="Q5S-6Q-lpf" eventType="touchUpInside" id="R4R-kl-dzU"/>
+                                    <action selector="onSingInButtonTapped:" destination="Q5S-6Q-lpf" eventType="touchUpInside" id="WfC-u7-kpB"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="l" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8dv-h4-N5v">
@@ -86,12 +88,22 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="Q5S-6Q-lpf" id="nIA-zv-b6z"/>
+                                </connections>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eWc-0e-wED">
+                                <rect key="frame" x="137" y="442" width="48" height="30"/>
+                                <state key="normal" title="Cancel">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onCancelButtonTapped:" destination="Q5S-6Q-lpf" eventType="touchUpInside" id="YFc-qU-W8v"/>
+                                </connections>
+                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IntownLogo.png" translatesAutoresizingMaskIntoConstraints="NO" id="6lN-sd-8GA">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="253"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="253" id="UYY-Ux-5q0"/>
-                                </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -109,25 +121,30 @@
                             <constraint firstAttribute="centerX" secondItem="8dv-h4-N5v" secondAttribute="centerX" id="HkQ-bh-XYU"/>
                             <constraint firstItem="WjX-k1-Bbs" firstAttribute="leading" secondItem="APe-cE-qNZ" secondAttribute="leadingMargin" id="LEX-B7-AZi"/>
                             <constraint firstItem="LPe-AG-uGO" firstAttribute="leading" secondItem="APe-cE-qNZ" secondAttribute="leadingMargin" id="PUp-cU-a7X"/>
-                            <constraint firstItem="4js-AT-VUv" firstAttribute="top" secondItem="LPe-AG-uGO" secondAttribute="bottom" constant="42" id="U4o-YM-pw0"/>
+                            <constraint firstItem="4js-AT-VUv" firstAttribute="top" secondItem="eWc-0e-wED" secondAttribute="bottom" constant="8" id="SXy-Oj-8as"/>
+                            <constraint firstItem="4js-AT-VUv" firstAttribute="top" secondItem="LPe-AG-uGO" secondAttribute="bottom" constant="48" id="U4o-YM-pw0"/>
                             <constraint firstItem="EyS-Ks-mgJ" firstAttribute="leading" secondItem="APe-cE-qNZ" secondAttribute="leadingMargin" constant="-16" id="Uym-GA-wGf"/>
                             <constraint firstAttribute="centerY" secondItem="RYr-IW-eSa" secondAttribute="centerY" constant="-79" id="VcN-3J-93c"/>
                             <constraint firstItem="TwA-0K-dGL" firstAttribute="leading" secondItem="APe-cE-qNZ" secondAttribute="leadingMargin" constant="-16" id="XGN-n1-P9k"/>
+                            <constraint firstItem="eWc-0e-wED" firstAttribute="top" secondItem="LPe-AG-uGO" secondAttribute="bottom" constant="10" id="ZBk-kB-7gL"/>
                             <constraint firstAttribute="trailingMargin" secondItem="6lN-sd-8GA" secondAttribute="trailing" constant="-16" id="d2V-ut-I8e"/>
-                            <constraint firstAttribute="centerY" secondItem="WjX-k1-Bbs" secondAttribute="centerY" constant="-140.5" id="h0z-qs-e9f"/>
+                            <constraint firstAttribute="centerY" secondItem="WjX-k1-Bbs" secondAttribute="centerY" constant="-132.5" id="h0z-qs-e9f"/>
+                            <constraint firstItem="eWc-0e-wED" firstAttribute="leading" secondItem="APe-cE-qNZ" secondAttribute="leadingMargin" constant="121" id="ijU-MZ-KP4"/>
                             <constraint firstItem="6lN-sd-8GA" firstAttribute="top" secondItem="APe-cE-qNZ" secondAttribute="topMargin" id="soO-KK-XZe"/>
                             <constraint firstAttribute="centerY" secondItem="8dv-h4-N5v" secondAttribute="centerY" constant="-78.5" id="vGn-Re-xU4"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="eWc-0e-wED" secondAttribute="trailing" constant="119" id="yT3-Ys-0UT"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Welcome Back!" id="okk-5B-kjm">
                         <barButtonItem key="leftBarButtonItem" title="Cancel" style="done" id="ZSd-LA-3am">
                             <inset key="imageInsets" minX="-15" minY="5" maxX="0.0" maxY="0.0"/>
-                            <connections>
-                                <action selector="onCancelButtonTapped:" destination="Q5S-6Q-lpf" id="81H-xp-RBY"/>
-                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="emailTextfield" destination="EyS-Ks-mgJ" id="vO1-z0-ViB"/>
+                        <outlet property="passwordTextField" destination="TwA-0K-dGL" id="Dlc-Ew-sdB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3yg-w6-2vs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
