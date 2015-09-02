@@ -39,7 +39,7 @@
 
 
 
-- (IBAction)onLoginButtonTapped:(UIButton *)sender {
+- (IBAction)onSignInButtonTapped:(UIButton *)sender {
 
 
 
@@ -47,6 +47,10 @@
 }
 
 - (IBAction)onSignUpButtonTapped:(UIButton *)sender {
+
+    UIStoryboard *signUpStoryBoard = [UIStoryboard storyboardWithName:@"SignUp" bundle:nil];
+    UIViewController *signUpVC = [signUpStoryBoard instantiateViewControllerWithIdentifier:@"SignUpVC"];
+    [self presentViewController:signUpVC animated:YES completion:nil];
 
 
 }
