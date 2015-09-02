@@ -42,6 +42,10 @@
 - (IBAction)onSignInButtonTapped:(UIButton *)sender {
 
 
+    UIStoryboard *signInStoryBoard = [UIStoryboard storyboardWithName:@"SignIn" bundle:nil];
+    UIViewController *signInVC = [signInStoryBoard instantiateViewControllerWithIdentifier:@"SignInVC"];
+    [self presentViewController:signInVC animated:YES completion:nil];
+    
 
 
 }
@@ -55,7 +59,6 @@
 
 }
 - (IBAction)onSignInWithFacebookButtonTapped:(UIButton *)sender {
-
 
 
 }
