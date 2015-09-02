@@ -10,6 +10,9 @@
 
 @interface WelcomeVC ()
 
+@property (weak, nonatomic) IBOutlet UIButton *loginButton;
+@property (weak, nonatomic) IBOutlet UIButton *signupButton;
+
 @end
 
 @implementation WelcomeVC
@@ -17,8 +20,16 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+//
+//    [self.backgroundView setBackgroundColor: [UIColor colorWithRed:255.0/255.0 green:94.0/255.0 blue:1.0/255.0 alpha:1.0]];
+    [self.view setBackgroundColor:[UIColor colorWithRed:255.0/255.0 green:94.0/255.0 blue:1.0/255.0 alpha:1.0]];
 
-    self.parentViewController.view.backgroundColor = [UIColor colorWithRed:255.0 green:94.0 blue:1.0 alpha:1];
+    self.loginButton.layer.borderWidth = 2.0;
+    self.signupButton.layer.borderWidth = 2.0;
+    self.loginButton.layer.borderColor  = [UIColor whiteColor].CGColor;
+    self.signupButton.layer.borderColor = [UIColor whiteColor].CGColor;
+
+
 }
 
 - (void)didReceiveMemoryWarning {
@@ -26,14 +37,27 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+
+- (IBAction)onLoginButtonTapped:(UIButton *)sender {
+
+
+
+
 }
-*/
 
+- (IBAction)onSignUpButtonTapped:(UIButton *)sender {
+
+
+}
+- (IBAction)onSignInWithFacebookButtonTapped:(UIButton *)sender {
+
+
+
+}
+
+- (IBAction)onSignInWithTwitterButtonTapped:(UIButton *)sender {
+
+    
+}
 @end
